@@ -2,7 +2,7 @@
 
 ## Overview of Project:
 
-Pewlett-Hackard is one of the largest company in its field and there is a upcoming "Silver Tsunami" in few years. In order to be prapared for this massive transition be ready with, an HR analysis Bobby was assigned for creating databases to find solutions for filling open postions and detemining packages for upcoming retiring employees. My job is to help Bobby to build an Employee Database with SQL by utilizing my Data Modelling, Engineering, and Analysis skills. 
+Pewlett-Hackard is one of the largest company in its field and there is a upcoming "Silver Tsunami" in few years. In order to be prapared for this massive transition, an HR analysis Bobby was assigned for creating databases to find solutions for filling open positions and detemining packages for upcoming retiring employees. My job is to help Bobby to build an Employee Database with SQL by utilizing my Data Modelling, Engineering, and Analysis skills. 
 
 
 #### Purpose of Pewlett Hackard Analysis :
@@ -79,9 +79,11 @@ To generate this list in <b>Image-3</b>, we used following query to combine two 
 
 ##### 3. Total  number of retiring employees by Job Title : 
 * We retreieved this table from above table by grouping job title with <code> GROUP BY title </code> then finding the sum of each title with <code> COUNT (title)</code>. 
+* This table is will help HR to understand how many people will retiring with certain job title. 
 
 
 
-
-    
+<p align = "center" >
+<img width="231" alt="retiring_titles" src="https://user-images.githubusercontent.com/98676400/158484024-8196b6a3-dcc4-41e2-8a77-99f09ff8a4d8.png">
+</p>
     
