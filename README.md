@@ -2,7 +2,7 @@
 
 ## Overview of Project:
 
-Pewlett-Hackard is one of the largest company in its field and there is a upcoming "Silver Tsunami" in few years. They wanted to be ready for it so that an HR analysis Bobby was assigned for creating databases and my job is to help Bobby to build an Employee Database with SQL by utilizing my Data Modelling, Engineering, and Analysis skills. 
+Pewlett-Hackard is one of the largest company in its field and there is a upcoming "Silver Tsunami" in few years. In order to be prapared for this massive transition be ready with, an HR analysis Bobby was assigned for creating databases to find solutions for filling open postions and detemining packages for upcoming retiring employees. My job is to help Bobby to build an Employee Database with SQL by utilizing my Data Modelling, Engineering, and Analysis skills. 
 
 
 #### Purpose of Pewlett Hackard Analysis :
