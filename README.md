@@ -8,16 +8,22 @@ Pewlett-Hackard is one of the largest company in its field and there is a upcomi
 #### Purpose of Pewlett Hackard Analysis :
 
 Our main purpose to answer two fundamental questions for Pewlett-Hackard  :
-* 1- Who will be retiring in next few years ?
-* 2- How many positions will Pewlett-Hackard need to fill ?
+
+1- Who will be retiring in next few years ?
+
+2- How many positions will Pewlett-Hackard need to fill ?
 
 To answers mentioned questions, Bobby and myself decided that we needed to create following datasets : 
 
-*The Number of Retiring Employees by Title:
-    ** Calculate the sum of retiring employees grouped by title
-    **Calculate the number of roles the company needs to fill by grouping title and department.
-*The Employees Eligible for the Mentorship Program:
-    ** Calculate number retiring employees to mentor new hired by grouping by title and department.
+* The Number of Retiring Employees by Title:
+
+   * Calculate the sum of retiring employees grouped by title
+    
+   * Calculate the number of roles the company needs to fill by grouping title and department.
+    
+* The Employees Eligible for the Mentorship Program:
+
+   * Calculate number retiring employees to mentor new hired by grouping by title and department.
     
 This analysis will also help future-proof Pewlett-Hackard by generating a list of all employees eligible for retirement package 
 
@@ -38,7 +44,8 @@ As first part of the analysis, we quickly scanned six datasets that was provided
 
 Next, we created an Entity Relation Diagram (ERDS) by using " Quick DBD " that will assist us to demonstrate varies relations between each and every datasets as in Image-1 .
 
-
+<p style="text-align:center">
+<img src="https://user-images.githubusercontent.com/98676400/158301876-c423fda5-2a0f-409e-8c30-dc4bd6fcc41f.png" ></p>
 #####
 
 Lastly, we started creating databases by usiung provided datasets and utilizing PostGres for holding data and PgAdmin which is an interface  to communicate with P0stGres. 
