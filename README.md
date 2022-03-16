@@ -154,3 +154,6 @@ However, in order to present a simpler explanation to the company we created a t
 </p>
 <p align = "center"> Image -7</p>
 
+
+  
+  Aktug Cilekci 
