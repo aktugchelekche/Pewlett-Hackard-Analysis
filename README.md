@@ -78,12 +78,14 @@ To generate this list in <b>Image-3</b>, we used following query to combine two 
 
 ##### 3. Total  number of retiring employees by Job Title : 
 * We retreieved this table in <b> Image - 4</b> from above table by grouping job title with <code> GROUP BY title </code> then finding the sum of each title with <code> COUNT (title)</code>. 
+* Job title was grouped by 7 main positions. 
 * This table is will help HR to understand how many people will retiring from each job title. 
-
-
 
 <p align = "center" >
 <img width="231" alt="retiring_titles" src="https://user-images.githubusercontent.com/98676400/158484024-8196b6a3-dcc4-41e2-8a77-99f09ff8a4d8.png">
 </p>
 <p align = "center" >Image - 4</p>
     
+##### 4. Employess who meet mentorship criteria : 
+
+
