@@ -16,7 +16,6 @@ Our main purpose to answer two fundamental questions for Pewlett-Hackard  :
 To answers mentioned questions, Bobby and myself decided that we needed to create following datasets : 
 
 * The Number of Retiring Employees by Title:
-<img width="489" alt="unique_titles" src="https://user-images.githubusercontent.com/98676400/158481299-bf7b307d-9740-44a4-b658-0436186009c6.png">
 
    * Calculate the sum of retiring employees grouped by title
     
@@ -78,12 +77,13 @@ To generate this list, we used following query to combine two datasets "employee
 To generate this list in <b>Image-3</b>, we used following query to combine two datasets "employees.csv and title.csv" then filtered it by using <code> WHERE (e.birth_date BETWEEN '1952-01-01' AND '1955-12-31') </code> in addition to this code block, this table was ordered by <code> Order BY emp_no</code> then <code> to_date DESC </code>.
 
 ##### 3. Total  number of retiring employees by Job Title : 
-* We retreieved this table from above table by grouping job title with <code> GROUP BY title </code> then finding the sum of each title with <code> COUNT (title)</code>. 
-* This table is will help HR to understand how many people will retiring with certain job title. 
+* We retreieved this table in <b> Image - 4</b> from above table by grouping job title with <code> GROUP BY title </code> then finding the sum of each title with <code> COUNT (title)</code>. 
+* This table is will help HR to understand how many people will retiring from each job title. 
 
 
 
 <p align = "center" >
 <img width="231" alt="retiring_titles" src="https://user-images.githubusercontent.com/98676400/158484024-8196b6a3-dcc4-41e2-8a77-99f09ff8a4d8.png">
 </p>
+<p align = "center" >Image - 4</p>
     
