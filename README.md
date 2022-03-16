@@ -1,6 +1,6 @@
 # Pewlett Hackard Analysis
 
-## Overview of Project:
+## Overview of Project
 
 Pewlett-Hackard is one of the largest company in its field and there is a upcoming "Silver Tsunami" in few years. In order to be prapared for this massive transition, an HR analysis Bobby was assigned for creating databases to find solutions for filling open positions and detemining packages for upcoming retiring employees. My job is to help Bobby to build an Employee Database with SQL by utilizing my Data Modelling, Engineering, and Analysis skills. 
 
@@ -51,7 +51,7 @@ Next, we created an Entity Relation Diagram (ERDS) by using " Quick DBD " that w
 Lastly, we started creating databases by usiung provided datasets and utilizing PostGres for holding data and PgAdmin which is an interface  to communicate with P0stGres. 
 
 
-## Results :
+## Results 
 
 ##### 1. Retiring Employees Table :
 * The table displays a list of employees who is going to retire in the next few years.
@@ -65,8 +65,8 @@ Lastly, we started creating databases by usiung provided datasets and utilizing 
 To generate this list, we used following query to combine two datasets "employees.csv and title.csv" then filtered it by using <code> WHERE (e.birth_date BETWEEN '1952-01-01' AND '1955-12-31') </code> as in <b>Image - 2</b> .As we investigate through out this data, there are duplicates in our table. In order to eliminates the duplicates, we will use <code> Distinct ON () </code> clause to retrieve a filtered table as our next piece of results. 
 
 ##### 2. Retiring employees without duplicates :
-* This table is a derivative of first table with not duplicate information. 
-* * There are 90,398 employees in the list.
+* This table is a derivative of first table with no duplicate information. 
+* There are 90,398 employees in the list.
 * The table displays a list of employees who is going to retire in the next few years and also shown their most current position, that is one of benefit using <code> Distinct ON () </code> clause. 
 
 <p align = "center" >
@@ -74,10 +74,10 @@ To generate this list, we used following query to combine two datasets "employee
 </p>
 <p align = "center" >Image - 3</p>
 
-To generate this list in <b>Image-3</b>, we used following query to combine two datasets "employees.csv and title.csv" then filtered it by using <code> WHERE (e.birth_date BETWEEN '1952-01-01' AND '1955-12-31') </code> in addition to this code block, this table was ordered by <code> Order BY emp_no</code> then <code> to_date DESC </code>.
+In order to create this list in <b>Image-3</b>, we used <Join ON()> query to combine two datasets "employees.csv and title.csv" then filtered it by using <code> WHERE (e.birth_date BETWEEN '1952-01-01' AND '1955-12-31') </code> in addition to this code block, this table was ordered by <code> Order BY emp_no</code> then <code> to_date DESC </code>.
 
 ##### 3. Total  number of retiring employees by Job Title : 
-* We retreieved this table in <b> Image - 4</b> from above table by grouping job title with <code> GROUP BY title </code> then finding the sum of each title with <code> COUNT (title)</code>. 
+* We retreieved this table in <b> Image - 4</b>  by grouping job title with <code> GROUP BY title </code> then finding the sum of each title with <code> COUNT (title)</code>. 
 * Job title was grouped by 7 main positions. 
 * This table is will help HR to understand how many people will retiring from each job title. 
 
@@ -87,5 +87,70 @@ To generate this list in <b>Image-3</b>, we used following query to combine two 
 <p align = "center" >Image - 4</p>
     
 ##### 4. Employess who meet mentorship criteria : 
+* In order to detemine the employees who can be part of mentorship program for new hiring, there tables combined and filtered by <code>WHERE (e.birth_date BETWEEN '1952-01-01' AND '1955-12-31')</code>, also to unsure remiving dublicates <code> Distinct ON()</code> was apllied on employee number. 
+* As a reasult :
+  * We captured 1,549 employees who meet the criteria for mentorship program including their respective most recent position as in <b> Image-5</b> . 
+ 
+<p align = "center" >
+<img width="717" alt="mentorship_eligibilty" src="https://user-images.githubusercontent.com/98676400/158695176-d6a096db-b16d-4764-b039-c0073d8eddcf.png"></p>
+<p align = "center" >Image - 5</p>
 
+
+## Summary
+The purpose of this analysis was to find answers for two essential questions :
+
+<b>1- The number of retiring employees per title : </b> 
+
+There are 72,458 employees are expected to retire in next few years, the break down  per title : 
+
+<table style="width:100%">
+  <tr>
+    <th>Title</th>
+    <th>Number of Employees</th>
+  </tr>
+  <tr>
+    <td>Senior Engineer </td>
+    <td>25,916</td>
+  </tr>
+  <tr>
+    <td>Senior Staff</td>
+    <td>24,926</td>
+  </tr>
+  <tr>
+    <td>Engineer</td>
+    <td>9,285</td>
+  </tr>
+  <tr>
+    <td>Staff</td>
+    <td>7,636</td>
+  </tr>
+  <tr>
+    <td>Technique Leader</td>
+    <td>3,603</td>
+  </tr>
+  <tr>
+    <td>Assistant Engineer</td>
+    <td>1,090</td>
+  </tr>
+  <tr>
+    <td>Manager</td>
+    <td>2</td>
+  </tr>
+</table>
+
+In addition to this table , we created a table in <b>Image 6</b> that includes each employee whose job title as well as the department, that will help to each department to be prepared for the Silver Tsunami.
+<p align = "center">
+<img width="599" alt="unique_per_department" src="https://user-images.githubusercontent.com/98676400/158698746-276b8477-973b-4b18-b44d-054c664b01b1.png">
+</p>
+<p align = "center"> Image -6</p>
+
+<b>2- Employees who are eligible to participate in a mentorship program : </b> 
+
+There are 1,549 employees are expected to be part of mentorship program, the break down  per employee by title is as in <b>Image - 5</b>. 
+However, in order to present a simpler explanation to the company we created a table that group each job title by each department and find the count of it. Hence, the company will be able to predict a budget plan for each department, and HR will be able to create job posting for each job title as in <b> Image - 7 <b>
+<p align = "center">
+  
+<img width="370" alt="department_need" src="https://user-images.githubusercontent.com/98676400/158699941-b055f006-4205-4b96-8ed1-21911eae2795.png">
+</p>
+<p align = "center"> Image -7</p>
 
