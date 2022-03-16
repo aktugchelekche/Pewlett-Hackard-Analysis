@@ -2,7 +2,7 @@
 
 ## Overview of Project
 
-Pewlett-Hackard is one of the largest company in its field and there is a upcoming "Silver Tsunami" in few years. In order to be prapared for this massive transition, an HR analysis Bobby was assigned for creating databases to find solutions for filling open positions and detemining packages for upcoming retiring employees. My job is to help Bobby to build an Employee Database with SQL by utilizing my Data Modelling, Engineering, and Analysis skills. 
+Pewlett-Hackard is one of the largest company in its field and there is a upcoming "Silver Tsunami" in few years. In order to be prepared for this massive transition, an HR analysis Bobby was assigned for creating databases to find solutions for filling open positions and determining packages for upcoming retiring employees. My job is to help Bobby to build an Employee Database with SQL by utilizing my Data Modelling, Engineering, and Analysis skills. 
 
 
 #### Purpose of Pewlett Hackard Analysis :
@@ -48,7 +48,7 @@ Next, we created an Entity Relation Diagram (ERDS) by using " Quick DBD " that w
 <img src="https://user-images.githubusercontent.com/98676400/158301876-c423fda5-2a0f-409e-8c30-dc4bd6fcc41f.png" ></p>
 <p align = "center" >Image - 1 </p>
 
-Lastly, we started creating databases by usiung provided datasets and utilizing PostGres for holding data and PgAdmin which is an interface  to communicate with P0stGres. 
+Lastly, we started creating databases by using provided datasets and utilizing PostGres for holding data and PgAdmin which is an interface  to communicate with P0stGres. 
 
 
 ## Results 
@@ -77,7 +77,7 @@ To generate this list, we used following query to combine two datasets "employee
 In order to create this list in <b>Image-3</b>, we used <Join ON()> query to combine two datasets "employees.csv and title.csv" then filtered it by using <code> WHERE (e.birth_date BETWEEN '1952-01-01' AND '1955-12-31') </code> in addition to this code block, this table was ordered by <code> Order BY emp_no</code> then <code> to_date DESC </code>.
 
 ##### 3. Total  number of retiring employees by Job Title : 
-* We retreieved this table in <b> Image - 4</b>  by grouping job title with <code> GROUP BY title </code> then finding the sum of each title with <code> COUNT (title)</code>. 
+* We retrieved this table in <b> Image - 4</b>  by grouping job title with <code> GROUP BY title </code> then finding the sum of each title with <code> COUNT (title)</code>. 
 * Job title was grouped by 7 main positions. 
 * This table is will help HR to understand how many people will retiring from each job title. 
 
@@ -86,9 +86,9 @@ In order to create this list in <b>Image-3</b>, we used <Join ON()> query to com
 </p>
 <p align = "center" >Image - 4</p>
     
-##### 4. Employess who meet mentorship criteria : 
-* In order to detemine the employees who can be part of mentorship program for new hiring, there tables combined and filtered by <code>WHERE (e.birth_date BETWEEN '1952-01-01' AND '1955-12-31')</code>, also to unsure remiving dublicates <code> Distinct ON()</code> was apllied on employee number. 
-* As a reasult :
+##### 4. Employees who meet mentorship criteria : 
+* In order to determine the employees who can be part of mentorship program for new hiring, there tables combined and filtered by <code>WHERE (e.birth_date BETWEEN '1952-01-01' AND '1955-12-31')</code>, also to unsure removing duplicates <code> Distinct ON()</code> was applied on employee number. 
+* As a result :
   * We captured 1,549 employees who meet the criteria for mentorship program including their respective most recent position as in <b> Image-5</b> . 
  
 <p align = "center" >
