@@ -11,7 +11,7 @@ Our main purpose to answer two fundamental questions for Pewlett-Hackard  :
 
 1- Who will be retiring in next few years ?
 
-2- How many positions will Pewlett-Hackard need to fill ?
+2- How many positions will Pewlett-Hackard need to fill and The number of Employees Eligible for the Mentorship Program ?
 
 To answers mentioned questions, Bobby and myself decided that we needed to create following datasets : 
 
